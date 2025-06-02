@@ -83,7 +83,7 @@ if (-not $SkipPesterTests) {
 
 $version = Confirm-ModuleManifest -SourceFolder $SourceDirectory -Module $ModuleName
 
-$outputDirectory = Join-Path $BuildDirectory $ModuleName $version
+$outputDirectory = $BuildDirectory | Join-Path -ChildPath $ModuleName | Join-Path -ChildPath $version
 
 if (Test-Path -Path $outputDirectory) {
     Write-Verbose "Clearing '${outputDirectory}'.."
