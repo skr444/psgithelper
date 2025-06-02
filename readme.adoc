@@ -1,4 +1,4 @@
-= skr PSGitHelper
+= PSGitHelper
 :author: skr444
 :docdate: 
 :doctype: book
@@ -11,7 +11,7 @@
 :sectnumlevels: 5
 :chapter-label:
 :xrefstyle: full
-:revnumber: 1.0
+:revnumber: 1.1
 
 // attributes
 :module-name: PSGitHelper
@@ -23,9 +23,15 @@
 
 *[big]#Revision History#*
 
-[cols="2,1,1,4"]
+[cols="2,1,1,5a"]
 |===
 | Author | Version | Date | Description
+
+| skr444
+| 1.1
+| 2025-06-02
+| - Updated module version.
+  - Removed *Known bugs* section.
 
 | skr444
 | 1.0
@@ -36,7 +42,7 @@
 == Module
 
 Identifier:: {module-name}
-Latest stable version:: 1.0.0
+Latest stable version:: 1.0.1
 Minimum Powershell version:: 5.1
 
 This module contains a few Powershell cmdlets that provide aliases for frequently used git commands.
@@ -81,21 +87,16 @@ Overview of git convenience functions.
 
 NOTE: This module will be published on the Powershell Gallery some day.
 
-== Known bugs
-
-=== Functional
-
-None at the moment.
-
-=== Non-functional
-
-None at the moment.
-
 == Changes
 
 [cols="1,1,5a"]
 |===
 | Date | Version | Changes
+
+| 2025-06-02
+| 1.0.1
+| Fixed issue in build script. +
+  See https://github.com/skr444/psgithelper/issues/2
 
 | 2025-06-01
 | 1.0.0
