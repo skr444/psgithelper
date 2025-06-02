@@ -11,7 +11,7 @@
 :sectnumlevels: 5
 :chapter-label:
 :xrefstyle: full
-:revnumber: 1.1
+:revnumber: 1.2
 
 // attributes
 :module-name: PSGitHelper
@@ -28,6 +28,11 @@
 | Author | Version | Date | Description
 
 | skr444
+| 1.2
+| 2025-06-02
+| - Updated module version and <<Changes>>.
+
+| skr444
 | 1.1
 | 2025-06-02
 | - Updated module version.
@@ -42,7 +47,7 @@
 == Module
 
 Identifier:: {module-name}
-Latest stable version:: 1.0.1
+Latest stable version:: 1.0.2
 Minimum Powershell version:: 5.1
 
 This module contains a few Powershell cmdlets that provide aliases for frequently used git commands.
@@ -92,6 +97,11 @@ NOTE: This module will be published on the Powershell Gallery some day.
 [cols="1,1,5a"]
 |===
 | Date | Version | Changes
+
+| 2025-06-02
+| 1.0.2
+| Unified Powershell directives. +
+  See https://github.com/skr444/psgithelper/issues/5
 
 | 2025-06-02
 | 1.0.1
