@@ -9,6 +9,7 @@ function Update-LocalGitRepository {
         .PARAMETER PruneTags
         Also prunes local tags when specified.
     #>
+
     [Alias("gfa")]
     [CmdletBinding()]
     param (
@@ -17,8 +18,6 @@ function Update-LocalGitRepository {
         [switch]
         $PruneTags
     )
-
-    #Requires -Version 5
 
     $gitFetchArgs = @(
         "fetch",

@@ -25,9 +25,6 @@ function Remove-OrphanedLocalBranches {
         $List
     )
 
-    #Requires -Version 5
-    Set-StrictMode -Version 3
-
     [string[]]$locals = (git branch -l) | ForEach-Object { [string]($_ -replace "\*", "").Trim() }
     Write-Verbose "Local branches:"
     $locals | ForEach-Object { Write-Verbose $_ }
