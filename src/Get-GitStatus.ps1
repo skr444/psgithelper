@@ -6,6 +6,7 @@ function Get-GitStatus {
         .DESCRIPTION
         Performs 'git status'.
     #>
+
     [Alias("gist", "gstat")]
     [CmdletBinding()]
     param ()
