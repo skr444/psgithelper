@@ -1,0 +1,112 @@
+= skr PSGitHelper
+:author: skr444
+:docdate: 
+:doctype: book
+:source-highlighter: rouge
+:description: This document contains information about this Powershell module.
+:keywords: powershell, git
+:toc: right
+:toclevels: 3
+:sectnums:
+:sectnumlevels: 5
+:chapter-label:
+:xrefstyle: full
+:revnumber: 1.0
+
+// attributes
+:module-name: PSGitHelper
+// URLs internal
+:url-git-repository: https://github.com/skr444/psgithelper.git
+// URLs external
+:url-powershell-profiles: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles
+:url-posh-git: https://github.com/dahlbyk/posh-git
+
+*[big]#Revision History#*
+
+[cols="2,1,1,4"]
+|===
+| Author | Version | Date | Description
+
+| skr444
+| 1.0
+| 2025-06-01
+| Created document.
+|===
+
+== Module
+
+Identifier:: {module-name}
+Latest stable version:: 1.0.0
+Minimum Powershell version:: 5.1
+
+This module contains a few Powershell cmdlets that provide aliases for frequently used git commands.
+Creating aliases for external commands can be achieved in various ways in Powershell.
+This module is merely a bundle of my most used git commands.
+
+== Git functions
+
+Overview of git convenience functions.
+
+[cols="2,4a,1m"]
+|===
+| Name | Comment | Alias
+
+| Get-GitStatus
+| `git status`
+| gist
+
+| New-GitWipCommit
+| Combines `git add .`, `git commit -m ".."` and `git push`
+| wip
+
+| Remove-OrphanedLocalBranches
+| Deletes local branches that have no remote branch.
+| gpl
+
+| Update-LocalGitRepository
+| Performs `git fetch --all --prune` with the optional `--prune-tags` switch.
+| gfa
+|===
+
+== Installation
+
+. Clone this repo with: `git clone {url-git-repository}`
+. Run the build script.
+. Decide which {url-powershell-profiles}[Powershell profile] you want to install this module in.
+  - Find available Powershell module locations with `$Env:PSModulePath -split ';'`
+. Copy the entire output folder `{module-name}` to the desired module folder.
+  - See the module available for import with `Get-Module -ListAvailable`.
+. Open a Powershell console and import the module with `Import-Module -Name {module-name}`.
+  - The module will only be available for the duration of the session.
+
+NOTE: This module will be published on the Powershell Gallery some day.
+
+== Known bugs
+
+=== Functional
+
+None at the moment.
+
+=== Non-functional
+
+None at the moment.
+
+== Changes
+
+[cols="1,1,5a"]
+|===
+| Date | Version | Changes
+
+| 2025-06-01
+| 1.0.0
+| Initial version.
+|===
+
+== Development
+
+Use the `samples/development/Get-ModuleMetaData.ps1` script to obtain a list of items to update the manifest or module script.
+
+== See also
+
+If you don't already know {url-posh-git}[posh-git], you will definitely like that too.
+The posh-git module is vastly more sophisticated and has been an inspiration for this one.
