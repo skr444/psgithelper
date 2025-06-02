@@ -3,7 +3,7 @@
     RootModule = 'PSGitHelper.psm1'
     
     # Version number of this module.
-    ModuleVersion = '1.0.1'
+    ModuleVersion = '1.0.2'
     
     # ID used to uniquely identify this module
     GUID = '227f1063-8b0d-45ea-b385-08e1c30e9d2e'
